@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+
+import converterReducer from '../features/converter/converterSlice'
+import ratesReducer from '../AppSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    rates: ratesReducer,
+    converter: converterReducer,
   },
 });
+ 

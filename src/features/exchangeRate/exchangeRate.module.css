@@ -1,0 +1,79 @@
+.exchangeRate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+  background-color: darkgrey;
+  border-radius: 40px;
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.247),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.418);
+}
+
+.exchangeRate > select {
+  appearance: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border: none;
+  border-radius: 40px;
+  background-color: darkgrey;
+  width: 180px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  text-align-last: center; 
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.247),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.425);
+}
+
+.exchangeRate > select:focus {
+  outline: none;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.exchangeRate > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.exchangeRate > ul > li > div {
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.exchangeRate > ul {
+  list-style-type: none;
+  overflow: scroll;
+  max-height: 400px;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 40px;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.377);
+}
+  
+.exchangeRate > ul::-webkit-scrollbar {
+    display: none;
+}
+
+.spinner {
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.377);
+}
